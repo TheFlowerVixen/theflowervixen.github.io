@@ -92,7 +92,7 @@ a:has( > #logo):after {
   color: #e0d0d0;
 }
 
-.post, .post:nth-child(2n), #new-post, .group {
+.post, .post:nth-child(2n), #new-post, .group, .mail, #mail {
   font-family: Minecraft Seven V2;
   color: #4c4c4c;
   padding: 8px;
