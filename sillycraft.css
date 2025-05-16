@@ -45,7 +45,7 @@ body {
   height: 200%;
 }
 
-strong, h2, h3, .post-author-display-name {
+strong, h2, h3 {
   text-transform: capitalize;
 }
 
