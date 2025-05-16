@@ -1,0 +1,198 @@
+@import "https://splashy.theflowervixen.workers.dev";
+
+body {
+  font-family: sans-serif;
+}
+
+#wrapper {
+  width: 100%;
+  box-shadow: 0 0 #fff;
+  background: url("https://thefamiliarscoot.neocities.org/sillypost/stone_bg.png");
+}
+
+#header-welcome {
+  color: #fff;
+}
+
+#logo {
+  width: 0;
+  height: 0;
+  padding-left: 420px;
+  padding-top: 90px;
+  background: url("https://thefamiliarscoot.neocities.org/sillypost/nav-logo.png");
+}
+
+#header {
+  background: linear-gradient(#fff0 0% 40%, #00000080 100%), url("https://thefamiliarscoot.neocities.org/sillypost/dirt.png");
+  border-bottom-width: 0;
+}
+
+#navbar > * {
+  display: flex;
+  text-transform: capitalize;
+  border-right-width: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+#navbar {
+  border-bottom: 0;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200%;
+}
+
+strong, h2, h3, .post-author-display-name {
+  text-transform: capitalize;
+}
+
+a, a:visited, #navbar > a, #navbar > a:visited {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Minecraft Seven V2;
+  src: url("https://raw.githubusercontent.com/TheFlowerVixen/theflowervixen.github.io/main/Minecraft-Seven_v2.ttf") format("truetype");
+}
+
+@keyframes bob {
+  from {
+    transform: translate(-240px, -10px)rotate(-5deg)scale(1);
+  }
+
+  to {
+    transform: translate(-240px, -10px)rotate(-5deg)scale(1.1);
+  }
+}
+
+a:has( > #logo):after {
+  content: var(--splash);
+  font-family: Minecraft Seven V2;
+  font-size: 20px;
+  color: #ff0;
+  display: inline-block;
+  text-transform: none;
+  animation-name: bob;
+  animation-duration: .3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in;
+  width: 400px;
+  text-align: center;
+}
+
+#main {
+  background: none;
+  color: #e0d0d0;
+}
+
+.post, .post:nth-child(2n), #new-post {
+  font-family: Minecraft Seven V2;
+  color: #4c4c4c;
+  padding: 8px;
+  background: #c6c6c6;
+  background-clip: padding-box;
+  border-style: ridge;
+  border-width: 8px;
+  border-image: url("https://thefamiliarscoot.neocities.org/sillypost/post-bg.png");
+  border-image-slice: 8;
+  border-image-repeat: repeat;
+}
+
+.post > img {
+  background: #8b8b8b;
+  border-style: ridge;
+  border-width: 4px;
+  border-image: url("https://thefamiliarscoot.neocities.org/sillypost/post-contents.png");
+  border-image-slice: 4;
+  border-image-repeat: repeat;
+}
+
+button[type="submit"], input[type="submit"] {
+  color: #fff;
+  font-size: 14px;
+  font-smooth: never;
+  font-family: Minecraft Seven V2;
+  background: url("https://thefamiliarscoot.neocities.org/sillypost/c3_button_fill.png");
+  border-image: url("https://thefamiliarscoot.neocities.org/sillypost/c3_button.png");
+  border-style: ridge;
+  border-width: 4px;
+  border-image-slice: 4;
+  border-image-repeat: repeat;
+  text-transform: capitalize;
+}
+
+button[type="submit"][disabled], input[type="submit"][disabled], button[type="submit"][disabled]:hover, input[type="submit"][disabled]:hover {
+  color: gray;
+  background: url("https://thefamiliarscoot.neocities.org/sillypost/c3_button_disabled_fill.png");
+  border-image: url("https://thefamiliarscoot.neocities.org/sillypost/c3_button_disabled.png");
+  border-style: ridge;
+  border-width: 4px;
+  border-image-slice: 4;
+  border-image-repeat: repeat;
+}
+
+button[type="submit"]:hover, input[type="submit"]:hover {
+  color: #ff0;
+  background: url("https://thefamiliarscoot.neocities.org/sillypost/c3_button_hover_fill.png");
+  border-image: url("https://thefamiliarscoot.neocities.org/sillypost/c3_button_hover.png");
+  border-style: ridge;
+  border-width: 4px;
+  border-image-slice: 4;
+  border-image-repeat: repeat;
+}
+
+#header-beans, .post-author-beans, .profile-beans {
+  color: #976746;
+  text-transform: capitalize;
+}
+
+#header-ipods, .post-author-ipods, .profile-ipods {
+  color: #eadb84;
+  text-transform: capitalize;
+}
+
+img[src="/static/bean.png"] {
+  width: 0;
+  height: 0;
+  padding: 8px;
+  background: url("https://thefamiliarscoot.neocities.org/sillypost/beans.png");
+}
+
+img[src="/static/ipod.png"] {
+  width: 0;
+  height: 0;
+  padding: 8px;
+  background: url("https://thefamiliarscoot.neocities.org/sillypost/totem.png");
+}
+
+#header-quarters {
+  color: #d9dfe7;
+  text-transform: capitalize;
+}
+
+img[src="/static/quarter.png"] {
+  width: 0;
+  height: 0;
+  padding: 8px;
+  background: url("https://thefamiliarscoot.neocities.org/sillypost/iron_nugget.png");
+}
+
+.sillionaire, .splatinum {
+  font-family: Minecraft Seven V2;
+}
+
+.sillionaire:after, .splatinum:after {
+  background: #100010f0;
+  background-clip: padding-box;
+  border-image: url("https://thefamiliarscoot.neocities.org/sillypost/tooltip.png");
+  border-style: ridge;
+  border-width: 4px;
+  border-image-slice: 4;
+}
